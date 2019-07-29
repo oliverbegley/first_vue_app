@@ -1,19 +1,22 @@
 <template>
-    <header class="header">
-        <h1>
-            Todo List
-        </h1>
-    </header>
+  <header class="header">
+    <h1>TodoList</h1>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+  </header>
 </template>
 
 <script>
 export default {
-    name:"header"
+  name: "Header"
 }
 </script>
+
 <style scoped>
   .header {
-    background: #333;
+    background: #41B883;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -24,4 +27,3 @@ export default {
     text-decoration: none;
   }
 </style>
-
